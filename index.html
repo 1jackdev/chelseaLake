@@ -30,9 +30,6 @@
             1967 Topographic Map of Chelsea Lake
           </li>
           <li class="list-group-item list-group-item-success">
-            Current Google Maps - Roads
-          </li>
-          <li class="list-group-item list-group-item-danger">
             Current Google Maps - Satellite
           </li>
         </ul>
@@ -42,45 +39,46 @@
         Click the buttons below to choose which maps you would like to overlay.
       </p>
     </div>
-    <div class="container col-lg-10 mb-1">
-      <div id="map-card" class="card">
-        <div class="card-body text-center">
-          <h5 class="card-title">Choose your maps:</h5>
-          <a id="topo-btn" class="btn btn-primary text-white">1967 Topo</a>
-          <a id="road-btn" class="btn btn-success text-white">Current Roads</a>
-          <a id="satellite-btn" class="btn btn-danger text-white"
-            >Current Satellite</a
-          >
-        </div>
+    <div id="map-area" style="height: 600px; overflow: hidden;" class="card position-relative">
+      <div id="button-holder" class="justify-content-center" style="z-index: 2">
+        <a style="width: 150px" id="topo-btn" class="btn btn-primary text-white"
+          >1967 Topo</a
+        >
+        <a
+          style="width: 150px"
+          id="satellite-btn"
+          class="btn btn-success text-white"
+          >Current Satellite</a
+        >
       </div>
-    </div>
-    <div
-      id="img-holder"
-      style="height: 550px"
-      class="card mx-5 position-relative align-items-center"
-    >
-      <img
-        style="opacity: 0.5;"
-        id="topo-img"
-        class="card-img-bottom p-3 w-75 h-100 img-fluid position-absolute"
-        src="img/1967 chelsea-lake topo-1.png"
-        alt="Chelsea Lake 1967 topo map"
-      />
-      <img
-        style="opacity: 0.4;"
-        id="road-img"
-        class="card-img-bottom p-3 w-75 h-100 img-fluid position-absolute"
-        src="img/google map.png"
-        alt="present day google road map"
-      />
-      <img
-        style="opacity: 0.3;"
-        id="satellite-img"
-        class="card-img-bottom p-3 w-75 h-100 img-fluid position-absolute"
-        src="img/google satellite.png"
-        alt="present day google satellite map"
-      />
-      <img src="" alt="" />
+      <div id="img-holder" style="z-index: 1;">
+        <img
+          style="
+            opacity: 0.5;
+            width: 1000px;
+            height: 1000px;
+            top: 2%;
+            right: 13%;
+            transform: rotate(0deg);
+          "
+          id="topo-img"
+          class="card-img-bottom p-3 img-fluid position-absolute"
+          src="img/1967 chelsea-lake topo-1.png"
+          alt="Chelsea Lake 1967 topo map"
+        />
+        <img
+          style="
+            opacity: 0.3;
+            width: 1200px;
+            height: 900px;
+            transform: rotate(0deg);
+          "
+          id="satellite-img"
+          class="card-img-bottom p-3 img-fluid position-absolute"
+          src="img/google sat 3.png"
+          alt="present day google satellite map"
+        />
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
