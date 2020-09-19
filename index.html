@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      shrink-to-fit="no"
+    />
+    <title>Chelsea Lake Maps</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="jumbotron text-center py-2">
+      <h1 class="display-4">Chelsea Lake</h1>
+      <p class="lead">
+        Below you can find a combination of maps of the Chelsea Lake area:
+      </p>
+      <div class="d-flex">
+        <ul
+          class="list-group col-sm-10 col-md-8 col-lg-6 mx-auto justify-content-center"
+        >
+          <li class="list-group-item list-group-item-primary">
+            1967 Topographic Map of Chelsea Lake
+          </li>
+          <li class="list-group-item list-group-item-success">
+            Current Google Maps - Roads
+          </li>
+          <li class="list-group-item list-group-item-danger">
+            Current Google Maps - Satellite
+          </li>
+        </ul>
+      </div>
+      <hr class="my-4" />
+      <p>
+        Click the buttons below to choose which maps you would like to overlay.
+      </p>
+    </div>
+    <div class="container col-lg-10 mb-1">
+      <div id="map-card" class="card">
+        <div class="card-body text-center">
+          <h5 class="card-title">Choose your maps:</h5>
+          <a id="topo-btn" class="btn btn-primary text-white">1967 Topo</a>
+          <a id="road-btn" class="btn btn-success text-white">Current Roads</a>
+          <a id="satellite-btn" class="btn btn-danger text-white"
+            >Current Satellite</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      id="img-holder"
+      style="height: 550px"
+      class="card mx-5 position-relative align-items-center"
+    >
+      <img
+        style="opacity: 0.5;"
+        id="topo-img"
+        class="card-img-bottom p-3 w-75 h-100 img-fluid position-absolute"
+        src="img/1967 chelsea-lake topo-1.png"
+        alt="Chelsea Lake 1967 topo map"
+      />
+      <img
+        style="opacity: 0.4;"
+        id="road-img"
+        class="card-img-bottom p-3 w-75 h-100 img-fluid position-absolute"
+        src="img/google map.png"
+        alt="present day google road map"
+      />
+      <img
+        style="opacity: 0.3;"
+        id="satellite-img"
+        class="card-img-bottom p-3 w-75 h-100 img-fluid position-absolute"
+        src="img/google satellite.png"
+        alt="present day google satellite map"
+      />
+      <img src="" alt="" />
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
